@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phanish Gym</title>
+    <style>
+        body {
+            background-image: url('img.jpeg');
+            background-repeat: no-repeat;
+            /* background-color: rgb(252, 136, 155); */
+        }
+
+        header {
+            color: black;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            margin: 0px;
+            left: 0.5%;
+        }
+
+        .center {
+            /* border: 2px solid rgb(39, 184, 51); */
+            display: block;
+            width: 50%;
+            margin: auto;
+            padding: 0px 20px;
+            /* background: white; */
+        }
+
+        .right {
+            /* border: 2px solid rgb(247, 43, 179); */
+            display: inline-block;
+            position: absolute;
+            right: 0.5%;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 30px;
+        }
+
+        .navbar li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+
+        li a:hover,
+        li a.active {
+            text-decoration: underline;
+            color: rgb(255, 0, 0);
+        }
+
+        .right .btn {
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+            background: rgb(0, 0, 0);
+            color: white;
+        }
+
+        .logo {
+            /* display: inline-block; */
+            align-items: center;
+            width: 60px;
+            padding: 0px;
+            filter: invert(100%);
+        }
+
+        .txt {
+            font-size: 20px;
+        }
+
+        .container {
+            float: right;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 40px 0px;
+            padding: 40px 2px;
+            height: 500px;
+            width: 20%;
+            border-radius: 20px;
+            /* color: rgb(252, 252, 252); */
+        }
+
+        .ha {
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+
+        .forms {
+            padding: 15px;
+        }
+
+        .bt {
+            margin: 15px;
+            padding: 5px;
+            /* float: right; */
+            width: 250px;
+            border: none;
+        }
+        .bt:hover{
+            text-decoration: none;
+            background: rgb(146, 86, 243);
+        }
+        .lo button{
+            text-align: center;
+            width: 90px;
+            cursor: pointer;
+            margin: 15px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="i1.png" alt="" class="logo">
+            <div class="txt">
+                PHANISH GYM
+            </div>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li> <a href="" class="active">Home</a></li>
+                <li> <a href="">About Us</a></li>
+                <li> <a href="">Awards</a></li>
+                <li> <a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="ha">Join Now</h1>
+        <form action="">
+            <div class="forms">
+                Name:<input type="text" name="" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="forms">
+                Age():<input type="text" name="" id="" placeholder="Enter Your Age">
+            </div>
+            <div class="forms" id="gen">
+                Gender: Male<input type="radio" name="Gender" id="">Female<input type="radio" name="Gender"
+                    id="">Others<input type="radio" name="Gender" id="">
+            </div>
+            <div class="forms">
+                Phone No:<input type="number" name="" id="" placeholder="Enter Mobile no">
+            </div>
+            <div class="forms">
+                Email-Ad:<input type="email" name="" id="" placeholder="Enter Email-id">
+            </div>
+            <div class="forms">
+                AadharNo:<input type="number" placeholder="Enter Aadhar No">
+            </div>
+            <div>
+                <input type="checkbox" name="" id="cheb">
+                I Agree to all the terms and conditions
+                provided at my own risk.
+            </div>
+        </form>
+        <button class="bt">
+            Submit Now
+        </button>
+        <div class="login">
+            If already a customer Click on login below.
+        </div>
+        <div class="lo">
+            <button>
+                Login
+            </button>
+        </div>
+    </div>
+</body>
+</html>
